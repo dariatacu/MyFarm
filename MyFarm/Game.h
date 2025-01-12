@@ -10,11 +10,13 @@ private:
     string nume_jucator;
     int nivel;
     int puncte;
-    Ferma ferma;
+    int bani;
 
 public:
-    Game(string nume);
+    Game(string nume,int& bani);
     void afisareInfo() const;
+
+    void setBani(int bani);
 };
 
 #endif
